@@ -1,0 +1,153 @@
+﻿:root {
+  --bodyHeightScale: 1; }
+
+@keyframes TemporaryShow {
+  0%, 100% {
+    visibility: visible; } }
+
+@keyframes TemporaryHide {
+  0%, 100% {
+    visibility: hidden; } }
+
+#highlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+#Electricity {
+  width: 100%;
+  height: 100%; }
+  #Electricity[state=off] {
+    display: none; }
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/Fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+asvigilus-element {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Roboto-Bold;
+  background-color: black; }
+  asvigilus-element #Mainframe {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%; }
+    asvigilus-element #Mainframe #Electricity {
+      position: absolute;
+      top: 0%;
+      left: 0%; }
+      asvigilus-element #Mainframe #Electricity[state=off] {
+        display: none; }
+      asvigilus-element #Mainframe #Electricity[state=init] #title {
+        visibility: visible; }
+      asvigilus-element #Mainframe #Electricity[state=init] #EngineDisplay {
+        display: none; }
+  asvigilus-element #title {
+    font-size: 75px;
+    font-family: Roboto-Bold;
+    color: white;
+    text-align: center;
+    margin-top: 25%;
+    visibility: hidden; }
+  asvigilus-element #EngineDisplay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%; }
+    asvigilus-element #EngineDisplay #RPMGauge {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 35%; }
+    asvigilus-element #EngineDisplay #MAPGauge {
+      position: absolute;
+      top: 0%;
+      left: 37.5%;
+      width: 35%; }
+    asvigilus-element #EngineDisplay #OILGauge {
+      position: absolute;
+      top: 0%;
+      right: 1%;
+      width: 24%; }
+    asvigilus-element #EngineDisplay #FUELGauge {
+      position: absolute;
+      top: 35%;
+      right: 1%;
+      width: 24%; }
+    asvigilus-element #EngineDisplay #OATGauge {
+      position: absolute;
+      bottom: 0%;
+      right: 13%;
+      width: 12%; }
+    asvigilus-element #EngineDisplay #FuelPressGauge {
+      position: absolute;
+      top: 35%;
+      right: 26%;
+      width: 24%; }
+    asvigilus-element #EngineDisplay #VoltsGauge {
+      position: absolute;
+      bottom: 1%;
+      left: 1%;
+      width: 22%; }
+    asvigilus-element #EngineDisplay #AmpsGauge {
+      position: absolute;
+      bottom: 1%;
+      left: 24%;
+      width: 22%; }
+    asvigilus-element #EngineDisplay #FTZone {
+      position: absolute;
+      right: 26%;
+      width: 25%;
+      bottom: 10%;
+      height: 10%;
+      border: 1.2vh solid grey; }
+      asvigilus-element #EngineDisplay #FTZone .FlightTimeLine {
+        font-size: 5vh;
+        line-height: 8vh;
+        width: 100%;
+        text-align: center; }
+    asvigilus-element #EngineDisplay #EGT {
+      position: absolute;
+      color: green;
+      font-size: 6vh;
+      line-height: 10vh;
+      top: 35%;
+      left: 1%;
+      height: 25%;
+      width: 20%; }
+      asvigilus-element #EngineDisplay #EGT .rect {
+        position: absolute;
+        top: 45%;
+        border: 1vh solid green;
+        width: 100%;
+        height: 55%;
+        text-align: center; }
+      asvigilus-element #EngineDisplay #EGT #EGT_Value {
+        color: white; }
+    asvigilus-element #EngineDisplay #CHT {
+      position: absolute;
+      color: aqua;
+      font-size: 6vh;
+      line-height: 10vh;
+      top: 35%;
+      left: 25%;
+      height: 25%;
+      width: 20%; }
+      asvigilus-element #EngineDisplay #CHT .rect {
+        position: absolute;
+        top: 45%;
+        border: 1vh solid green;
+        width: 100%;
+        height: 55%;
+        text-align: center; }
+      asvigilus-element #EngineDisplay #CHT #CHT_Value {
+        color: white; }
+

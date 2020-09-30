@@ -1,0 +1,104 @@
+﻿:root {
+  --bodyHeightScale: 1; }
+
+@keyframes TemporaryShow {
+  0%, 100% {
+    visibility: visible; } }
+
+@keyframes TemporaryHide {
+  0%, 100% {
+    visibility: hidden; } }
+
+#highlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+#Electricity {
+  width: 100%;
+  height: 100%; }
+  #Electricity[state=off] {
+    display: none; }
+
+@font-face {
+  font-family: "Alarm-Clock";
+  src: url("/Pages/VCockpit/Instruments/Shared/Fonts/Quartz.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+KT76C-element {
+  width: 100%;
+  height: 100%;
+  color: orangered;
+  font-family: Alarm-Clock;
+  overflow: hidden; }
+  KT76C-element #Mainframe {
+    width: 100%;
+    height: 100%; }
+  KT76C-element #TransponderPanel {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+  KT76C-element #minus {
+    position: absolute;
+    left: 12%;
+    top: 18%;
+    font-size: 48vh; }
+  KT76C-element #FL {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    font-size: 23px;
+    vertical-align: bottom;
+    width: 20px; }
+  KT76C-element #AD {
+    top: 21%;
+    left: 18%;
+    width: 92px;
+    position: absolute; }
+    KT76C-element #AD #AltitudeDisplay {
+      font-size: 50px;
+      position: relative;
+      text-align: right; }
+  KT76C-element #ModeAnnunc {
+    width: 110px;
+    position: absolute;
+    top: 25%;
+    left: 42%; }
+    KT76C-element #ModeAnnunc #ALT, KT76C-element #ModeAnnunc #GND, KT76C-element #ModeAnnunc #ON, KT76C-element #ModeAnnunc #SBY {
+      font-size: 24px;
+      vertical-align: top;
+      text-align: center;
+      width: 50px;
+      display: inline-block;
+      visibility: hidden; }
+    KT76C-element #ModeAnnunc #topAnnunc {
+      display: block; }
+    KT76C-element #ModeAnnunc[state=ALT] #ALT,
+    KT76C-element #ModeAnnunc[state=GND] #GND,
+    KT76C-element #ModeAnnunc[state=ON] #ON,
+    KT76C-element #ModeAnnunc[state=SBY] #SBY,
+    KT76C-element #ModeAnnunc[state=TST] #ALT,
+    KT76C-element #ModeAnnunc[state=TST] #ON,
+    KT76C-element #ModeAnnunc[state=TST] #SBY {
+      visibility: visible; }
+  KT76C-element #R {
+    font-size: 23px;
+    vertical-align: top;
+    width: 10px;
+    position: absolute;
+    top: 25%;
+    left: 66%; }
+  KT76C-element #CD {
+    top: 21%;
+    left: 69%;
+    width: 120px;
+    position: absolute; }
+    KT76C-element #CD #CodeDisplay {
+      font-size: 50px;
+      text-align: right;
+      position: relative; }
+

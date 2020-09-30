@@ -1,0 +1,154 @@
+﻿<script type="text/html" id="ASVigilus">
+    <glasscockpit-highlight id="highlight"></glasscockpit-highlight>
+    <div id="Mainframe">
+        <div id="Electricity" state="off">
+            <div id="title">ASVigilus</div>
+            <div id="EngineDisplay">
+                <svg id="RPMGauge" viewBox="0 0 100 75">
+                    <text fill="white" x="0" y="10" font-size="10" font-family="Roboto-Bold" text-anchor="start">RPM</text>
+                    <path fill="white" d="M85 30 A35 35 0 1 1 17.11 18.03 L12.41 16.32 A40 40 0 1 0 90 30 Z"></path>
+                    <path id="RPM_Green" fill="green"></path>
+                    <path id="RPM_Yellow" fill="yellow"></path>
+                    <path id="RPM_Red" fill="red"></path>
+                    <circle fill="white" cx="50" cy="30" r="2"></circle>
+                    <rect x="50" y="29.5" height="1" width="35" fill="white"></rect>
+                    <rect id="RPM_Cursor" x="50" y="29.5" height="1" width="35" fill="white" transform="rotate(90,50,30)"></rect>
+                    <path id="RPM_CursorPath" fill="white" fill-opacity="0.25"></path>
+                    <rect id="RPM_Value_Outline" x="30.5" y="2" height="26" width="69" fill="black" stroke="yellow" stroke-width="2"></rect>
+                    <text id="RPM_Value" fill="white" x="65" y="24" font-size="25" font-family="Roboto-Bold" text-anchor="middle">5600</text>
+                </svg>
+                <svg id="MAPGauge" viewBox="0 0 100 75">
+                    <text fill="white" x="0" y="10" font-size="10" font-family="Roboto-Bold" text-anchor="start">MAP</text>
+                    <path fill="white" d="M85 30 A35 35 0 1 1 17.11 18.03 L12.41 16.32 A40 40 0 1 0 90 30 Z"></path>
+                    <path id="MAP_Green" fill="green"></path>
+                    <circle fill="white" cx="50" cy="30" r="2"></circle>
+                    <rect x="50" y="29.5" height="1" width="35" fill="white"></rect>
+                    <rect id="MAP_Cursor" x="50" y="29.5" height="1" width="35" fill="white" transform="rotate(90,50,30)"></rect>
+                    <path id="MAP_CursorPath" fill="white" fill-opacity="0.25"></path>
+                    <rect id="MAP_Value_Outline" x="30.5" y="2" height="26" width="69" fill="black" stroke="yellow" stroke-width="2"></rect>
+                    <text id="MAP_Value" fill="white" x="65" y="24" font-size="25" font-family="Roboto-Bold" text-anchor="middle">5600</text>
+                </svg>
+                <svg id="OILGauge" viewBox="0 0 70 75">
+                    <text fill="white" x="35" y="20" font-size="10" font-family="Roboto-Bold" text-anchor="middle">OIL</text>
+                    <text fill="white" x="15" y="40" font-size="10" font-family="Roboto-Bold" text-anchor="start">P</text>
+                    <text fill="white" x="55" y="40" font-size="10" font-family="Roboto-Bold" text-anchor="end">T</text>
+                    <path fill="white" d="M15.85 46.07 A25 25 0 0 1 32.82 5.1 L32.39 0.12 A30 30 0 0 0 12.02 49.28 Z"></path>
+                    <path id="OilPress_Green" fill="green"></path>
+                    <path id="OilPress_Yellow" fill="yellow"></path>
+                    <path id="OilPress_Red" fill="red"></path>
+                    <path id="OilPress_LowYellow" fill="yellow"></path>
+                    <path id="OilPress_LowRed" fill="red"></path>
+                    <path id="OilPress_Cursor" fill="black"></path>
+                    <rect id="OilPress_Value_Outline" x="2" y="51" height="23" width="31" fill="black" stroke="yellow" stroke-width="2"></rect>
+                    <text id="OilPress_Value" fill="white" x="17" y="66" font-size="12" font-family="Roboto-Bold" text-anchor="middle">3.5</text>
+                    <path fill="white" d="M54.15 46.07 A25 25 0 0 0 37.18 5.1 L37.61 0.12 A30 30 0 0 1 57.98 49.28 Z"></path>
+                    <path id="OilTemp_Green" fill="green"></path>
+                    <path id="OilTemp_Yellow" fill="yellow"></path>
+                    <path id="OilTemp_Red" fill="red"></path>
+                    <path id="OilTemp_LowYellow" fill="yellow"></path>
+                    <path id="OilTemp_LowRed" fill="red"></path>
+                    <path id="OilTemp_Cursor" fill="black"></path>
+                    <rect id="OilTemp_Value_Outline" x="37" y="51" height="23" width="31" fill="black" stroke="yellow" stroke-width="2"></rect>
+                    <text id="OilTemp_Value" fill="white" x="52" y="66" font-size="12" font-family="Roboto-Bold" text-anchor="middle">87</text>
+                </svg>
+                <svg id="FUELGauge" viewBox="0 0 70 75">
+                    <text fill="white" x="35" y="20" font-size="10" font-family="Roboto-Bold" text-anchor="middle">FUEL</text>
+                    <text fill="white" x="35" y="30" font-size="10" font-family="Roboto-Bold" text-anchor="middle">GAL</text>
+                    <text id="FuelNameLeft" fill="white" x="15" y="40" font-size="6" font-family="Roboto-Bold" text-anchor="start">Center</text>
+                    <text id="FuelNameRight" fill="white" x="55" y="40" font-size="6" font-family="Roboto-Bold" text-anchor="end">Wings</text>
+                    <path fill="white" d="M15.85 46.07 A25 25 0 0 1 32.82 5.1 L32.39 0.12 A30 30 0 0 0 12.02 49.28 Z"></path>
+                    <path id="FuelLeft_Green" fill="green"></path>
+                    <path id="FuelLeft_Yellow" fill="yellow"></path>
+                    <path id="FuelLeft_Red" fill="red"></path>
+                    <path id="FuelLeft_LowYellow" fill="yellow"></path>
+                    <path id="FuelLeft_LowRed" fill="red"></path>
+                    <path id="FuelLeft_Cursor" fill="black"></path>
+                    <rect id="FuelLeft_Value_Outline" x="2" y="51" height="23" width="31" fill="black" stroke="yellow" stroke-width="2"></rect>
+                    <text id="FuelLeft_Value" fill="white" x="17" y="66" font-size="12" font-family="Roboto-Bold" text-anchor="middle">3.5</text>
+                    <path fill="white" d="M54.15 46.07 A25 25 0 0 0 37.18 5.1 L37.61 0.12 A30 30 0 0 1 57.98 49.28 Z"></path>
+                    <path id="FuelRight_Green" fill="green"></path>
+                    <path id="FuelRight_Yellow" fill="yellow"></path>
+                    <path id="FuelRight_Red" fill="red"></path>
+                    <path id="FuelRight_LowYellow" fill="yellow"></path>
+                    <path id="FuelRight_LowRed" fill="red"></path>
+                    <path id="FuelRight_Cursor" fill="black"></path>
+                    <rect id="FuelRight_Value_Outline" x="37" y="51" height="23" width="31" fill="black" stroke="yellow" stroke-width="2"></rect>
+                    <text id="FuelRight_Value" fill="white" x="52" y="66" font-size="12" font-family="Roboto-Bold" text-anchor="middle">87</text>
+                </svg>
+                <svg id="OATGauge" viewBox="0 0 35 60">
+                    <text fill="white" x="17.5" y="10" font-size="10" font-family="Roboto-Bold" text-anchor="middle">OAT</text>
+                    <rect id="OAT_Value_Outline" x="2" y="16" height="10" width="21" fill="black" stroke="green" stroke-width="2"></rect>
+                    <text id="OAT_Value" fill="white" x="12.5" y="25" font-size="10" font-family="Roboto-Bold" text-anchor="middle">25</text>
+                    <text fill="white" x="12.5" y="37" font-size="10" font-family="Roboto-Bold" text-anchor="middle">°C</text>
+                    <rect fill="white" x="25" width="10" y="15" height="45"></rect>
+                    <rect id="OAT_Green" fill="green" x="25" width="10" y="15" height="45"></rect>
+                    <rect id="OAT_Cursor" fill="black" x="26" width="8" y="16" height="25"></rect>
+                </svg>
+                <svg id="FuelPressGauge" viewBox="0 0 70 75">
+                    <text fill="white" x="35" y="20" font-size="10" font-family="Roboto-Bold" text-anchor="middle">FUEL</text>
+                    <text fill="white" x="35" y="30" font-size="10" font-family="Roboto-Bold" text-anchor="middle">P</text>
+                    <path fill="white" d="M15.85 46.07 A25 25 0 1 1 54.15 46.07 L57.98 49.28 A30 30 0 1 0 12.02 49.28 Z"></path>
+                    <path id="FuelPress_Green" fill="green"></path>
+                    <path id="FuelPress_Yellow" fill="yellow"></path>
+                    <path id="FuelPress_Red" fill="red"></path>
+                    <path id="FuelPress_LowYellow" fill="yellow"></path>
+                    <path id="FuelPress_LowRed" fill="red"></path>
+                    <path id="FuelPress_Cursor" fill="black"></path>
+                    <text fill="white" x="17" y="66" font-size="12" font-family="Roboto-Bold" text-anchor="middle">Psi</text>
+                    <rect id="FuelPress_Value_Outline" x="34" y="51" height="23" width="34" fill="black" stroke="yellow" stroke-width="2"></rect>
+                    <text id="FuelPress_Value" fill="white" x="51" y="66" font-size="12" font-family="Roboto-Bold" text-anchor="middle">0.38</text>
+                </svg>
+                <div id="FTZone">
+                    <div class="FlightTimeLine">
+                        <span>F.T.</span>
+                        <span id="FT_Value">00:25:30</span>
+                    </div>
+                </div>
+                <svg id="VoltsGauge" viewBox="0 0 70 75">
+                    <text fill="white" x="35" y="20" font-size="10" font-family="Roboto-Bold" text-anchor="middle">Volts</text>
+                    <path fill="white" d="M15.85 46.07 A25 25 0 1 1 54.15 46.07 L57.98 49.28 A30 30 0 1 0 12.02 49.28 Z"></path>
+                    <path id="Volts_Green" fill="green"></path>
+                    <path id="Volts_Yellow" fill="yellow"></path>
+                    <path id="Volts_Red" fill="red"></path>
+                    <path id="Volts_LowYellow" fill="yellow"></path>
+                    <path id="Volts_LowRed" fill="red"></path>
+                    <path id="Volts_Cursor" fill="black"></path>
+                    <rect id="Volts_Value_Outline" x="18" y="51" height="23" width="34" fill="black" stroke="yellow" stroke-width="2"></rect>
+                    <text id="Volts_Value" fill="white" x="35" y="66" font-size="12" font-family="Roboto-Bold" text-anchor="middle">0.38</text>
+                </svg>
+                <svg id="AmpsGauge" viewBox="0 0 70 75">
+                    <text fill="white" x="35" y="20" font-size="10" font-family="Roboto-Bold" text-anchor="middle">Amps</text>
+                    <path fill="white" d="M15.85 46.07 A25 25 0 1 1 54.15 46.07 L57.98 49.28 A30 30 0 1 0 12.02 49.28 Z"></path>
+                    <path id="Amps_Green" fill="green"></path>
+                    <path id="Amps_Yellow" fill="yellow"></path>
+                    <path id="Amps_Red" fill="red"></path>
+                    <path id="Amps_LowYellow" fill="yellow"></path>
+                    <path id="Amps_LowRed" fill="red"></path>
+                    <path id="Amps_Cursor" fill="black"></path>
+                    <rect id="Amps_Value_Outline" x="18" y="51" height="23" width="34" fill="black" stroke="yellow" stroke-width="2"></rect>
+                    <text id="Amps_Value" fill="white" x="35" y="66" font-size="12" font-family="Roboto-Bold" text-anchor="middle">0.38</text>
+                </svg>
+                <div id="EGT">
+                    <div>EGT °C</div>
+                    <div class="rect">
+                        <span>H</span>
+                        <span id="EGT_Value">837</span>
+                    </div>
+                </div>
+                <div id="CHT">
+                    <div>CHT °C</div>
+                    <div class="rect">
+                        <span>H</span>
+                        <span id="CHT_Value">108</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<link rel="stylesheet" href="ASVigilus.css" />
+
+<script type="text/html" import-script="/JS/SimPlane.js"></script>
+
+<script type="text/html" import-script="/Pages/VCockpit/Instruments/Generic/Monitoring/ASVigilus/ASVigilus.js"></script>

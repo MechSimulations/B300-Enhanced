@@ -1,0 +1,44 @@
+﻿:root {
+  --bodyHeightScale: 1; }
+
+@keyframes TemporaryShow {
+  0%, 100% {
+    visibility: visible; } }
+
+@keyframes TemporaryHide {
+  0%, 100% {
+    visibility: hidden; } }
+
+#highlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+#Electricity {
+  width: 100%;
+  height: 100%; }
+  #Electricity[state=off] {
+    display: none; }
+
+led-trim-element {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: orangered;
+  font-family: Alarm-Clock;
+  overflow: hidden; }
+  led-trim-element #Mainframe {
+    width: 100%;
+    height: 100%; }
+    led-trim-element #Mainframe #Electricity {
+      margin-top: 7.5%; }
+      led-trim-element #Mainframe #Electricity .rect {
+        width: 90%;
+        height: 7.5%;
+        margin-left: 6.5%;
+        margin-bottom: 7%;
+        background-color: #909573; }
+        led-trim-element #Mainframe #Electricity .rect[state=on] {
+          background-color: #FFFA00; }
+

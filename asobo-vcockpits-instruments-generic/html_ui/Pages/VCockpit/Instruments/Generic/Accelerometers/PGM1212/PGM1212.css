@@ -1,0 +1,187 @@
+﻿:root {
+  --bodyHeightScale: 1; }
+
+@keyframes TemporaryShow {
+  0%, 100% {
+    visibility: visible; } }
+
+@keyframes TemporaryHide {
+  0%, 100% {
+    visibility: hidden; } }
+
+#highlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+#Electricity {
+  width: 100%;
+  height: 100%; }
+  #Electricity[state=off] {
+    display: none; }
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/Fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+pgm1212-element {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  pgm1212-element #Mainframe {
+    width: 100%;
+    height: 100%;
+    font-family: Roboto-Regular; }
+    pgm1212-element #Mainframe #Default {
+      margin-top: 3%;
+      margin-left: 2%;
+      width: 96%;
+      display: none; }
+      pgm1212-element #Mainframe #Default #DefaultTop {
+        display: flex;
+        height: 50%; }
+        pgm1212-element #Mainframe #Default #DefaultTop #DefaultTopTitle {
+          font-size: 22px;
+          text-align: left;
+          color: black;
+          width: 65%; }
+        pgm1212-element #Mainframe #Default #DefaultTop #DefaultTopValue {
+          font-size: 22px;
+          text-align: right;
+          color: black;
+          width: 35%; }
+      pgm1212-element #Mainframe #Default #DefaultBottom {
+        display: flex;
+        height: 50%;
+        margin-top: 2%; }
+        pgm1212-element #Mainframe #Default #DefaultBottom #DefaultBottomTitle {
+          font-size: 22px;
+          text-align: left;
+          color: black;
+          width: 55%; }
+        pgm1212-element #Mainframe #Default #DefaultBottom #DefaultBottomValues {
+          display: flex;
+          width: 45%;
+          justify-content: flex-end; }
+          pgm1212-element #Mainframe #Default #DefaultBottom #DefaultBottomValues #DefaultBottomValue1 {
+            font-size: 22px;
+            text-align: center;
+            color: black;
+            margin-right: 15%; }
+          pgm1212-element #Mainframe #Default #DefaultBottom #DefaultBottomValues #DefaultBottomValueSep {
+            font-size: 22px;
+            text-align: center;
+            color: black;
+            margin-right: 15%; }
+          pgm1212-element #Mainframe #Default #DefaultBottom #DefaultBottomValues #DefaultBottomValue2 {
+            font-size: 22px;
+            text-align: center;
+            color: black; }
+      pgm1212-element #Mainframe #Default[state=on] {
+        display: block; }
+    pgm1212-element #Mainframe #Pilot {
+      margin-top: 3%;
+      margin-left: 2%;
+      width: 96%;
+      display: none; }
+      pgm1212-element #Mainframe #Pilot #PilotTop {
+        display: flex;
+        height: 50%; }
+        pgm1212-element #Mainframe #Pilot #PilotTop #PilotTopTitle {
+          font-size: 22px;
+          text-align: left;
+          color: black;
+          width: 65%; }
+        pgm1212-element #Mainframe #Pilot #PilotTop #PilotTopValue {
+          font-size: 22px;
+          text-align: right;
+          color: black;
+          width: 35%; }
+      pgm1212-element #Mainframe #Pilot #PilotBottom {
+        display: flex;
+        height: 50%;
+        margin-top: 2%; }
+        pgm1212-element #Mainframe #Pilot #PilotBottom #PilotBottomTitle {
+          font-size: 22px;
+          text-align: left;
+          color: black;
+          width: 65%; }
+        pgm1212-element #Mainframe #Pilot #PilotBottom #PilotBottomValue {
+          font-size: 22px;
+          text-align: right;
+          color: black;
+          width: 35%; }
+      pgm1212-element #Mainframe #Pilot[state=on] {
+        display: block; }
+    pgm1212-element #Mainframe #Flight {
+      margin-top: 3%;
+      margin-left: 2%;
+      width: 96%;
+      display: none; }
+      pgm1212-element #Mainframe #Flight #FlightTop {
+        display: flex;
+        height: 50%; }
+        pgm1212-element #Mainframe #Flight #FlightTop #FlightTopTitle {
+          font-size: 22px;
+          text-align: left;
+          color: black;
+          width: 65%; }
+        pgm1212-element #Mainframe #Flight #FlightTop #FlightTopValue {
+          font-size: 22px;
+          text-align: right;
+          color: black;
+          width: 35%; }
+      pgm1212-element #Mainframe #Flight #FlightBottom {
+        display: flex;
+        height: 50%;
+        margin-top: 2%; }
+        pgm1212-element #Mainframe #Flight #FlightBottom #FlightBottomTitle {
+          font-size: 22px;
+          text-align: left;
+          color: black;
+          width: 65%; }
+        pgm1212-element #Mainframe #Flight #FlightBottom #FlightBottomValue {
+          font-size: 22px;
+          text-align: right;
+          color: black;
+          width: 35%; }
+      pgm1212-element #Mainframe #Flight[state=on] {
+        display: block; }
+    pgm1212-element #Mainframe #Club {
+      margin-top: 3%;
+      margin-left: 2%;
+      width: 96%;
+      display: none; }
+      pgm1212-element #Mainframe #Club #ClubTop {
+        display: flex;
+        height: 50%; }
+        pgm1212-element #Mainframe #Club #ClubTop #ClubTopTitle {
+          font-size: 22px;
+          text-align: left;
+          color: black;
+          width: 65%; }
+        pgm1212-element #Mainframe #Club #ClubTop #ClubTopValue {
+          font-size: 22px;
+          text-align: right;
+          color: black;
+          width: 35%; }
+      pgm1212-element #Mainframe #Club #ClubBottom {
+        display: flex;
+        height: 50%;
+        margin-top: 2%; }
+        pgm1212-element #Mainframe #Club #ClubBottom #ClubBottomTitle {
+          font-size: 22px;
+          text-align: left;
+          color: black;
+          width: 65%; }
+        pgm1212-element #Mainframe #Club #ClubBottom #ClubBottomValue {
+          font-size: 22px;
+          text-align: right;
+          color: black;
+          width: 35%; }
+      pgm1212-element #Mainframe #Club[state=on] {
+        display: block; }
+

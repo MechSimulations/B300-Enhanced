@@ -1,0 +1,59 @@
+﻿:root {
+  --bodyHeightScale: 1; }
+
+@keyframes TemporaryShow {
+  0%, 100% {
+    visibility: visible; } }
+
+@keyframes TemporaryHide {
+  0%, 100% {
+    visibility: hidden; } }
+
+#highlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+#Electricity {
+  width: 100%;
+  height: 100%; }
+  #Electricity[state=off] {
+    display: none; }
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/Fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/Fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+pi463-element {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Roboto-Bold; }
+  pi463-element #Mainframe {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: white; }
+    pi463-element #Mainframe #Electricity {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      background-color: black; }
+      pi463-element #Mainframe #Electricity[state=off] {
+        display: none; }
+      pi463-element #Mainframe #Electricity #Title {
+        color: white;
+        font-size: 70px;
+        margin-left: 13%; }
+

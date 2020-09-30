@@ -1,0 +1,85 @@
+﻿:root {
+  --bodyHeightScale: 1; }
+
+@keyframes TemporaryShow {
+  0%, 100% {
+    visibility: visible; } }
+
+@keyframes TemporaryHide {
+  0%, 100% {
+    visibility: hidden; } }
+
+#highlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+#Electricity {
+  width: 100%;
+  height: 100%; }
+  #Electricity[state=off] {
+    display: none; }
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/Fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+digital-chronometer-element {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden; }
+  digital-chronometer-element #Mainframe {
+    width: 100%;
+    height: 100%;
+    font-family: Roboto-Regular; }
+    digital-chronometer-element #Mainframe #Top {
+      display: flex;
+      width: 92%;
+      height: 65%;
+      margin-top: 3%; }
+      digital-chronometer-element #Mainframe #Top #Hours {
+        width: 50%;
+        font-size: 60px;
+        text-align: right;
+        color: black; }
+      digital-chronometer-element #Mainframe #Top #Separator {
+        width: 5%;
+        font-size: 60px;
+        text-align: center;
+        color: black; }
+      digital-chronometer-element #Mainframe #Top #Minutes {
+        width: 30%;
+        font-size: 60px;
+        text-align: left;
+        color: black; }
+      digital-chronometer-element #Mainframe #Top #Seconds {
+        width: 25%;
+        margin-top: 5%;
+        font-size: 45px;
+        text-align: right;
+        color: black; }
+    digital-chronometer-element #Mainframe #Bottom {
+      display: flex;
+      width: 90%;
+      height: 30%; }
+      digital-chronometer-element #Mainframe #Bottom #LT,
+      digital-chronometer-element #Mainframe #Bottom #UTC,
+      digital-chronometer-element #Mainframe #Bottom #Flight,
+      digital-chronometer-element #Mainframe #Bottom #SW,
+      digital-chronometer-element #Mainframe #Bottom #DC {
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        margin-left: 10%;
+        visibility: hidden; }
+        digital-chronometer-element #Mainframe #Bottom #LT[state=on],
+        digital-chronometer-element #Mainframe #Bottom #UTC[state=on],
+        digital-chronometer-element #Mainframe #Bottom #Flight[state=on],
+        digital-chronometer-element #Mainframe #Bottom #SW[state=on],
+        digital-chronometer-element #Mainframe #Bottom #DC[state=on] {
+          visibility: visible; }
+

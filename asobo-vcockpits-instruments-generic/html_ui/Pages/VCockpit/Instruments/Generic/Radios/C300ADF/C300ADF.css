@@ -1,0 +1,55 @@
+﻿:root {
+  --bodyHeightScale: 1; }
+
+@keyframes TemporaryShow {
+  0%, 100% {
+    visibility: visible; } }
+
+@keyframes TemporaryHide {
+  0%, 100% {
+    visibility: hidden; } }
+
+#highlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+#Electricity {
+  width: 100%;
+  height: 100%; }
+  #Electricity[state=off] {
+    display: none; }
+
+c300adf-element {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: Roboto-Regular;
+  overflow: hidden; }
+  c300adf-element #Mainframe {
+    width: 100%;
+    height: 100%; }
+  c300adf-element #AdfPanel {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+    c300adf-element #AdfPanel #FRQ {
+      position: relative;
+      top: -15%;
+      font-size: 90px; }
+      c300adf-element #AdfPanel #FRQ #Hundreds {
+        position: absolute;
+        text-align: center;
+        right: 76%; }
+      c300adf-element #AdfPanel #FRQ #Tens {
+        position: absolute;
+        text-align: center;
+        left: 49%; }
+      c300adf-element #AdfPanel #FRQ #Units {
+        position: absolute;
+        text-align: center;
+        left: 85%; }
+

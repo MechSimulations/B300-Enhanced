@@ -1,0 +1,100 @@
+﻿:root {
+  --bodyHeightScale: 1; }
+
+@keyframes TemporaryShow {
+  0%, 100% {
+    visibility: visible; } }
+
+@keyframes TemporaryHide {
+  0%, 100% {
+    visibility: hidden; } }
+
+#highlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+#Electricity {
+  width: 100%;
+  height: 100%; }
+  #Electricity[state=off] {
+    display: none; }
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/Fonts/RobotoMono-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  width: 100%;
+  height: 100%; }
+  body #Mainframe {
+    font-family: Roboto-Bold;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    body #Mainframe #Electricity {
+      font-size: 32.5vh;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: #505050;
+      background-color: #ddddff; }
+      body #Mainframe #Electricity #ReplyIndicator {
+        position: absolute;
+        left: 50vh;
+        font-size: 50vh;
+        line-height: 55vh;
+        display: none; }
+
+@keyframes RBlink {
+  0%, 80% {
+    visibility: hidden; }
+  81%, 100% {
+    visibility: visible; } }
+        body #Mainframe #Electricity #ReplyIndicator[state=Blink] {
+          display: inherit;
+          animation: RBlink 1s infinite; }
+      body #Mainframe #Electricity #Ident {
+        position: absolute;
+        left: 2vh;
+        top: 2vh;
+        font-size: 20vh;
+        line-height: 20vh;
+        display: none;
+        color: #ddddff;
+        background-color: #505050; }
+        body #Mainframe #Electricity #Ident[state=Ident] {
+          display: inherit; }
+      body #Mainframe #Electricity #Code {
+        position: absolute;
+        right: 2vh;
+        top: 0vh;
+        font-size: 55vh;
+        line-height: 55vh; }
+
+@keyframes DBlink {
+  0%, 50% {
+    color: #ddddff;
+    background-color: #505050; }
+  51%, 100% {
+    color: #505050;
+    background-color: #ddddff; } }
+        body #Mainframe #Electricity #Code > span[state=Blink] {
+          animation: DBlink 1s infinite; }
+      body #Mainframe #Electricity #FlightId {
+        font-size: 20vh;
+        position: absolute;
+        right: 20vh;
+        top: 45vh; }
+      body #Mainframe #Electricity #ActiveMode {
+        position: absolute;
+        left: 4vh;
+        bottom: 0vh; }
+      body #Mainframe #Electricity #ReportedAltitude {
+        position: absolute;
+        right: 4vh;
+        bottom: 0vh; }
+

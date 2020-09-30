@@ -1,0 +1,46 @@
+﻿:root {
+  --bodyHeightScale: 1; }
+
+@keyframes TemporaryShow {
+  0%, 100% {
+    visibility: visible; } }
+
+@keyframes TemporaryHide {
+  0%, 100% {
+    visibility: hidden; } }
+
+#highlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+#Electricity {
+  width: 100%;
+  height: 100%; }
+  #Electricity[state=off] {
+    display: none; }
+
+@font-face {
+  font-family: "Alarm-Clock";
+  src: url("/Pages/VCockpit/Instruments/Shared/Fonts/Quartz.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+digital-flaps-element {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  digital-flaps-element #Mainframe {
+    width: 100%;
+    height: 100%; }
+  digital-flaps-element #textZone {
+    width: 100%;
+    height: 100%;
+    margin-top: -3%;
+    margin-left: 0%;
+    font-size: 130px;
+    text-align: right;
+    color: orangered;
+    font-family: Alarm-Clock; }
+
