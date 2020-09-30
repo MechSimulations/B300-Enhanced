@@ -1,0 +1,1 @@
+# Changes from 2020/10 to 2020/11

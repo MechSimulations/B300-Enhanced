@@ -1,0 +1,34 @@
+{
+    "content": [
+        {
+            "path": "en-US.locPak",
+            "size": 1498,
+            "date": 132461375683700264
+        },
+        {
+            "path": "html_ui/Pages/VCockpit/Instruments/NavSystems/Shared/NavSystem.js",
+            "size": 120355,
+            "date": 132461375514119360
+        },
+        {
+            "path": "SimObjects/Airplanes/Asobo_KingAir350/Checklist/KingAir350_Checklist.xml",
+            "size": 4040,
+            "date": 132461375683450920
+        },
+        {
+            "path": "SimObjects/Airplanes/Asobo_KingAir350/Checklist/Library.xml",
+            "size": 2552,
+            "date": 132461375683460894
+        },
+        {
+            "path": "SimObjects/Airplanes/Asobo_KingAir350/model/KINGAIR_350I.xml",
+            "size": 4288,
+            "date": 132461375683630440
+        },
+        {
+            "path": "SimObjects/Airplanes/Asobo_KingAir350/model/KINGAIR_350I_interior.XML",
+            "size": 64945,
+            "date": 132461375683650394
+        }
+    ]
+}

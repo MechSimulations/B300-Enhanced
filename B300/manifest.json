@@ -1,0 +1,33 @@
+{
+    "creator": "Sabes",
+    "release_notes": {
+        "neutral": {
+            "LastUpdate": "",
+            "OlderHistory": ""
+        }
+    },
+    "package_version": "0.0.1",
+    "title": "B300",
+    "dependencies": [
+        {
+            "package_version": "0.1.51",
+            "name": "asobo-aircraft-kingair350"
+        },
+        {
+            "package_version": "0.1.38",
+            "name": "asobo-vcockpits-instruments-generic"
+        },
+        {
+            "package_version": "0.1.13",
+            "name": "asobo-vcockpits-instruments"
+        },
+        {
+            "package_version": "0.1.61",
+            "name": "fs-base-aircraft-common"
+        }
+    ],
+    "content_type": "AIRCRAFT",
+    "total_package_size": "00000000000000196180",
+    "minimum_game_version": "1.9.3.0",
+    "manufacturer": "Textron Aviation"
+}

@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build",
+        "type": "shell",
+        "command": "python build.py",
+        "options": {
+          "cwd": "${workspaceFolder}/B300"
+        },
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  

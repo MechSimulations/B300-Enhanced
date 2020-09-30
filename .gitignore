@@ -1,0 +1,7 @@
+*
+!*/
+!/.vscode/**
+!/.github/**
+!/B300/**
+!.gitignore
+.DS_Store
