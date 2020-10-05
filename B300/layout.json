@@ -1,44 +1,39 @@
 {
     "content": [
         {
-            "path": "en-US.locPak",
-            "size": 1487,
-            "date": 132461485932055750
-        },
-        {
             "path": "html_ui/Pages/VCockpit/Instruments/NavSystems/AS3X_Touch/AS3X_Touch.html",
             "size": 81758,
-            "date": 132461485932055750
+            "date": 132463994800302326
         },
         {
             "path": "html_ui/Pages/VCockpit/Instruments/NavSystems/AS3X_Touch/AS3X_Touch.js",
             "size": 57429,
-            "date": 132461485932055750
+            "date": 132463994800302326
         },
         {
             "path": "html_ui/Pages/VCockpit/Instruments/NavSystems/B300_NavSystems/B300_NavSystem.js",
             "size": 117647,
-            "date": 132461485932055750
+            "date": 132463994800302326
         },
         {
             "path": "SimObjects/Airplanes/Asobo_KingAir350/Checklist/KingAir350_Checklist.xml",
             "size": 3933,
-            "date": 132461485932055750
+            "date": 132463994800302326
         },
         {
             "path": "SimObjects/Airplanes/Asobo_KingAir350/Checklist/Library.xml",
             "size": 2486,
-            "date": 132461485932055750
+            "date": 132463994800302326
         },
         {
             "path": "SimObjects/Airplanes/Asobo_KingAir350/model/KINGAIR_350I.xml",
             "size": 4183,
-            "date": 132461485932055750
+            "date": 132463994800302326
         },
         {
             "path": "SimObjects/Airplanes/Asobo_KingAir350/model/KINGAIR_350I_interior.XML",
             "size": 63404,
-            "date": 132461485932055750
+            "date": 132463994800302326
         }
     ]
 }
